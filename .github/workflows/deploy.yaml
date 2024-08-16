@@ -28,7 +28,7 @@ jobs:
     - name: Deploy to gh-pages branch
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.REPO_SECRET }}
         publish_dir: ./  # The directory to deploy
         publish_branch: gh-pages  # The branch to deploy to
         force_orphan: true  # Create a new orphan branch if gh-pages doesn't exist
